@@ -1,0 +1,119 @@
+// * {
+//   outline: 1px solid red;
+// }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: $blackish;
+
+  // do usunięcia
+  // background-color: rgb(221, 221, 221);
+}
+
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 84px 31px;
+}
+
+// .section {
+//   padding: 84px 0;
+// }
+
+.list-reset {
+  list-style: none;
+}
+
+.link-reset {
+  text-decoration: none;
+}
+
+.mobile-hide {
+  display: none;
+}
+
+.heading {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  color: $blackish;
+
+  &--hero {
+    color: $grayOpacity;
+  }
+}
+
+.small-gap {
+  margin-bottom: 20px;
+}
+
+.large-gap {
+  margin-bottom: 44px;
+}
+
+.title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+
+  &--hero {
+    font-size: 48px;
+    color: $white;
+  }
+
+  &--big {
+    font-size: 42px;
+  }
+
+  &--small {
+    font-size: 28px;
+  }
+
+  &--white {
+    color: $white;
+  }
+
+  &--black {
+    color: $blackish;
+  }
+}
+
+.desc {
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.02em;
+
+  &--hero {
+    color: $gray;
+  }
+}
+
+.social-links {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: $blackish;
+  text-decoration: none;
+
+  &:hover {
+    color: $orange;
+  }
+}

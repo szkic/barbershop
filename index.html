@@ -17,210 +17,426 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="/css/main.min.css" />
     <title>BarberShop</title>
   </head>
   <body>
     <header>
-      <a href="#"><img src="/images/Logo.jpg" width="69" height="56" alt="logo" /></a>
-      <nav>
-        <ul>
-          <li>O nas</li>
-          <li>Usługi i ceny</li>
-          <li>Barberzy</li>
-          <li>Kontakt</li>
-        </ul>
-      </nav>
-      <ul>
-        <li><a href="tel:+48111111111">+48 111 111 111</a></li>
-        <li><button type="button">Rejestracja online</button></li>
-      </ul>
+      <div class="container header">
+        <div class="header__inside">
+          <a href="#"><img src="/images/Logo.jpg" width="69" height="56" alt="logo" /></a>
+          <div class="mobile-hide">
+            <nav>
+              <ul>
+                <li>O nas</li>
+                <li>Usługi i ceny</li>
+                <li>Barberzy</li>
+                <li>Kontakt</li>
+              </ul>
+            </nav>
+            <ul>
+              <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+              <li><button type="button">Rejestracja online</button></li>
+            </ul>
+          </div>
+          <section class="section">
+            <div class="mobile-hide">
+              <ul class="list-reset">
+                <li class="social-links">Instagram</li>
+                <li class="social-links">Youtube</li>
+              </ul>
+            </div>
+
+            <div class="hero">
+              <p class="heading heading--hero small-gap">A hair salon for men in Warsaw</p>
+              <h1 class="title title--hero title--white small-gap">BarberShop</h1>
+              <p class="desc desc--hero">
+                Jesteśmy ekspertami w strzyżeniu. Pracujemy szybko, ostrożnie i elegancko
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
     </header>
 
     <main>
       <!-- HERO -->
-      <section>
-        <div>
-          <ul>
-            <li>Instagram</li>
-            <li>Youtube</li>
-          </ul>
-        </div>
-
-        <div>
-          <p>A hair salon for men in Warsaw</p>
-          <h1>BarberShop</h1>
-          <p>Jesteśmy ekspertami w strzyżeniu. Pracujemy szybko, ostrożnie i elegancko</p>
-        </div>
-      </section>
 
       <!-- ABOUT US -->
-      <section>
-        <ul>
-          <li><img src="/images/o_nas_1.jpg" alt="golenie brody" width="270" height="445" /></li>
-          <li><img src="/images/o_nas_2.jpg" alt="golenie brzytwą" width="270" height="445" /></li>
-        </ul>
-        <p>O nas</p>
-        <h2>Najlepszy Barbershop w Twoim mieście</h2>
-        <p>Jeśli chcesz dodać pewności do seojego stylu i wyglądu - jesteś w dobrym miejscu.</p>
-        <p>
-          Jesteśmy zespołem, który nigdy nie stoi w miejscu i jest cały czas w poszukiwaniu coraz
-          lepszych rozwiązań. Kiedy przyjdziesz do nas, już nigdy nie będziesz mógł zrezygnować ze
-          swojego nowego stylu. Jesteśmy zespołem, który zawsze jest z klientem na “TY”, dobrze
-          wiemy, co klient chcę. Chętnie zrobimy upgrade Twojemu wyglądu!
-        </p>
-        <button type="button">Rejestracja online</button>
+      <section class="section">
+        <div class="container about-us">
+          <ul class="list-reset mobile-hide">
+            <li><img src="/images/o_nas_1.jpg" alt="golenie brody" width="270" height="445" /></li>
+            <li>
+              <img src="/images/o_nas_2.jpg" alt="golenie brzytwą" width="270" height="445" />
+            </li>
+          </ul>
+          <p class="heading about-us__heading small-gap">O nas</p>
+          <h2 class="title title--small title--black small-gap">
+            Najlepszy Barbershop w Twoim mieście
+          </h2>
+          <p class="desc about-us__desc small-gap">
+            Jeśli chcesz dodać pewności do seojego stylu i wyglądu - jesteś w dobrym miejscu.
+          </p>
+          <p class="about-us__explain">
+            Jesteśmy zespołem, który nigdy nie stoi w miejscu i jest cały czas w poszukiwaniu coraz
+            lepszych rozwiązań. Kiedy przyjdziesz do nas, już nigdy nie będziesz mógł zrezygnować ze
+            swojego nowego stylu. Jesteśmy zespołem, który zawsze jest z klientem na “TY”, dobrze
+            wiemy, co klient chcę. Chętnie zrobimy upgrade Twojemu wyglądu!
+          </p>
+          <button type="button" class="btn btn--white">Rejestracja online</button>
+        </div>
       </section>
 
       <!-- SERVICES AND PRICES -->
-      <section>
-        <p>Przyjdź do najlepszych barberów w Twoim mieście</p>
-        <h2>Usługi i ceny</h2>
-        <ul>
-          <li><span>Męskie strzyżenie</span><span>od 100 zł.</span></li>
-          <li><span>Strzyżenie brody</span><span>od 75 zł.</span></li>
-          <li><span>Strzyżenie wąsów</span><span>od 50 zł.</span></li>
-          <li><span>Golenie brzytwą</span><span>od 75 zł.</span></li>
-        </ul>
-        <ul>
-          <li><span>Strzyżenie jedna długość</span><span>od 50 zł.</span></li>
-          <li><span>Strzyżenie maszynką</span><span>od 75 zł.</span></li>
-          <li><span>Strzyżenie chłopca (do 12 lat)</span><span>od 80 zł.</span></li>
-          <li><span>Repigmentacja włosów</span><span>od 100zł.</span></li>
-        </ul>
-        <button type="button">Rejestracja online</button>
+      <section class="section">
+        <div class="container prices">
+          <div class="">
+            <p class="heading heading--hero small-gap">
+              Przyjdź do najlepszych barberów w Twoim mieście
+            </p>
+            <h2 class="title title--big title--white large-gap">Usługi i ceny</h2>
+            <div class="prices__services">
+              <ul class="list-reset">
+                <li class="small-gap">
+                  <span class="prices__service">Męskie strzyżenie</span
+                  ><span class="prices__service">od 100 zł.</span>
+                </li>
+                <li class="small-gap">
+                  <span class="prices__service">Strzyżenie brody</span
+                  ><span class="prices__service">od 75 zł.</span>
+                </li>
+                <li class="small-gap">
+                  <span class="prices__service">Strzyżenie wąsów</span
+                  ><span class="prices__service">od 50 zł.</span>
+                </li>
+                <li class="small-gap">
+                  <span class="prices__service">Golenie brzytwą</span
+                  ><span class="prices__service">od 75 zł.</span>
+                </li>
+              </ul>
+              <ul class="list-reset">
+                <li class="small-gap">
+                  <span class="prices__service">Strzyżenie jedna długość</span
+                  ><span class="prices__service">od 50 zł.</span>
+                </li>
+                <li class="small-gap">
+                  <span class="prices__service">Strzyżenie maszynką</span
+                  ><span class="prices__service">od 75 zł.</span>
+                </li>
+                <li class="small-gap">
+                  <span class="prices__service">Strzyżenie chłopca (do 12 lat)</span
+                  ><span class="prices__service">od 80 zł.</span>
+                </li>
+                <li class="small-gap">
+                  <span class="prices__service">Repigmentacja włosów</span
+                  ><span class="prices__service">od 100zł.</span>
+                </li>
+              </ul>
+            </div>
+            <div class="prices__button">
+              <button type="button" class="btn">Rejestracja online</button>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- WHY US -->
-      <section>
-        <ul>
-          <li>
-            <span>600</span>
-            <p>Zadowolonych klientów dziennie</p>
-          </li>
-          <li>
-            <span>50</span>
-            <p>Nagród za najlepszą obsługę</p>
-          </li>
-          <li>
-            <span>20</span>
-            <p>Najlepszych barberów Warszawy</p>
-          </li>
-          <li>
-            <span>100</span>
-            <p>Prezentów stałym klientom</p>
-          </li>
-        </ul>
+      <section class="section">
+        <div class="container">
+          <div class="why-us">
+            <ul class="list-reset why-us__list">
+              <li class="why-us__stats">
+                <div class="why-us__stats-container">
+                  <span class="why-us__stats-number">600</span>
+                  <p class="why-us__stats-text">Zadowolonych klientów dziennie</p>
+                </div>
+              </li>
+              <li class="why-us__stats">
+                <div class="why-us__stats-container">
+                  <span class="why-us__stats-number">50</span>
+                  <p class="why-us__stats-text">Nagród za najlepszą obsługę</p>
+                </div>
+              </li>
+              <li class="why-us__stats">
+                <div class="why-us__stats-container">
+                  <span class="why-us__stats-number">20</span>
+                  <p class="why-us__stats-text">Najlepszych barberów Warszawy</p>
+                </div>
+              </li>
+              <li class="why-us__stats">
+                <div class="why-us__stats-container">
+                  <span class="why-us__stats-number">100</span>
+                  <p class="why-us__stats-text">Prezentów stałym klientom</p>
+                </div>
+              </li>
+            </ul>
 
-        <p>Tradycyjna szkoła</p>
-        <h2>Dlaczego klienci przychodzą do nas</h2>
-        <p>
-          O nas mówią tylko dobrze. Ale najlepiej jeden raz zobaczyć i odczuć, niż 10 razy
-          przeczytać.
-        </p>
+            <div class="why-us__explain">
+              <p class="heading small-gap">Tradycyjna szkoła</p>
+              <h2 class="title title--big title--black small-gap">
+                Dlaczego klienci przychodzą do nas
+              </h2>
+              <p class="desc">
+                O nas mówią tylko dobrze. Ale najlepiej jeden raz zobaczyć i odczuć, niż 10 razy
+                przeczytać.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- OUR BARBERS -->
-      <section>
-        <p>Dla prawdziwych mężczyzn</p>
-        <h2>Nasi barberzy</h2>
-        <ul>
-          <li>
-            <figure>
-              <img src="/images/John_Smith.jpg" alt="John Smith" width="370" height="346" />
-              <figcaption>
-                <h3>John Smith</h3>
-                <p>Extreme Barber</p>
-                <ul>
-                  <li><a href=""></a></li>
-                  <li><a href=""></a></li>
-                  <li><a href=""></a></li>
-                  <li><a href=""></a></li>
-                </ul>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="/images/Michele_Doe.jpg" alt="Michele Doe" width="370" height="346" />
-              <figcaption>
-                <h3>Michele Doe</h3>
-                <p>Extreme Barber</p>
-                <ul>
-                  <li><a href=""></a></li>
-                  <li><a href=""></a></li>
-                  <li><a href=""></a></li>
-                  <li><a href=""></a></li>
-                </ul>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="/images/Alan_Black.jpg" alt="Alan Black" width="370" height="346" />
-              <figcaption>
-                <h3>Alan Black</h3>
-                <p>Extreme Barber</p>
-                <ul>
-                  <li><a href=""></a></li>
-                  <li><a href=""></a></li>
-                  <li><a href=""></a></li>
-                  <li><a href=""></a></li>
-                </ul>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
+      <section class="section">
+        <div class="container barbers">
+          <p class="heading small-gap">Dla prawdziwych mężczyzn</p>
+          <h2 class="title title--big title--black large-gap">Nasi barberzy</h2>
+          <ul class="list-reset barbers__list">
+            <li>
+              <figure>
+                <img
+                  src="/images/John_Smith_mobile@1x.jpg"
+                  alt="John Smith"
+                  width="418"
+                  height="346"
+                  class="barbers__barber"
+                />
+                <figcaption>
+                  <h3 class="barbers__name">John Smith</h3>
+                  <p class="barbers__job">Extreme Barber</p>
+                  <ul class="list-reset barbers__social-icons">
+                    <li>
+                      <a href="#" class="barbers__social-icon">
+                        <svg width="20" height="20">
+                          <use href="/images/icons.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="barbers__social-icon">
+                        <svg width="20" height="20">
+                          <use href="/images/icons.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="barbers__social-icon">
+                        <svg width="20" height="20">
+                          <use href="/images/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="barbers__social-icon">
+                        <svg width="20" height="20">
+                          <use href="/images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="/images/Michele_Doe_mobile@1x.jpg"
+                  alt="Michele Doe"
+                  width="418"
+                  height="346"
+                  class="barbers__barber"
+                />
+                <figcaption>
+                  <h3 class="barbers__name">Michele Doe</h3>
+                  <p class="barbers__job">Extreme Barber</p>
+                  <ul class="list-reset barbers__social-icons">
+                    <li>
+                      <a href="#" class="barbers__social-icon">
+                        <svg width="20" height="20">
+                          <use href="/images/icons.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="barbers__social-icon">
+                        <svg width="20" height="20">
+                          <use href="/images/icons.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="barbers__social-icon">
+                        <svg width="20" height="20">
+                          <use href="/images/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="barbers__social-icon">
+                        <svg width="20" height="20">
+                          <use href="/images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="/images/Alan_Black_mobile@1x.jpg"
+                  alt="Alan Black"
+                  width="418"
+                  height="346"
+                  class="barbers__barber"
+                />
+                <figcaption>
+                  <h3 class="barbers__name">Alan Black</h3>
+                  <p class="barbers__job">Extreme Barber</p>
+                  <ul class="list-reset barbers__social-icons">
+                    <li>
+                      <a href="#" class="barbers__social-icon">
+                        <svg width="20" height="20">
+                          <use href="/images/icons.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="barbers__social-icon">
+                        <svg width="20" height="20">
+                          <use href="/images/icons.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="barbers__social-icon">
+                        <svg width="20" height="20">
+                          <use href="/images/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="barbers__social-icon">
+                        <svg width="20" height="20">
+                          <use href="/images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- PORTFOLIO -->
-      <section>
-        <p>W języku łacińskim "barba" oznacza "broda"</p>
-        <ul>
-          <li>
-            <img src="/images/portfolio1.jpg" alt="strzyżenie włosów" width="270" height="360" />
-          </li>
-          <li><img src="/images/portfolio2.jpg" alt="golenie brody" width="270" height="360" /></li>
-          <li>
-            <img src="/images/portfolio3.jpg" alt="ręcznik na twarzy" width="270" height="360" />
-          </li>
-          <li><img src="/images/portfolio4.jpg" alt="golenie szyi" width="270" height="360" /></li>
-        </ul>
+      <section class="section">
+        <div class="container portfolio">
+          <p class="heading large-gap">W języku łacińskim "barba" oznacza "broda"</p>
+          <ul class="list-reset portfolio__list">
+            <li>
+              <img
+                src="/images/porftolio/portfolio_mobile_1@1x.jpg"
+                alt="strzyżenie włosów"
+                width="418"
+                height="360"
+              />
+            </li>
+            <li>
+              <img
+                src="/images/porftolio/portfolio_mobile_2@1x.jpg"
+                alt="golenie brody"
+                width="418"
+                height="360"
+              />
+            </li>
+            <li>
+              <img
+                src="/images/porftolio/portfolio_mobile_3@1x.jpg"
+                alt="ręcznik na twarzy"
+                width="418"
+                height="360"
+              />
+            </li>
+            <li>
+              <img
+                src="/images/porftolio/portfolio_mobile_4@1x.jpg"
+                alt="golenie szyi"
+                width="418"
+                height="360"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- CONTACT -->
-      <section>
-        <h2>Rezerwacja online</h2>
-        <form name="signup" autocomplete="on" novalidate>
-          <label for="name"></label>
-          <input type="text" name="name" id="signup" placeholder="imię" />
-          <label for="telephone"></label>
-          <input type="tel" name="phone" id="telephone" placeholder="telefon" />
-          <label for="message"></label>
-          <textarea name="message" id="message" rows="3" placeholder="wiadomość"></textarea>
-          <button type="submit">Wyślij</button>
-        </form>
-        <h3>Kontakt</h3>
-        <address>
-          <ul>
-            <li>
-              ul. Prosta 20
-              <br />
-              Warszawa, 00-001
-            </li>
-            <li><a href="tel:+48111111111">+48 111 111 111</a></li>
-            <li><a href="mailto:barbershop@email.com">barbershop@email.com</a></li>
-          </ul>
-        </address>
-        <p>Godziny otwarcia</p>
-        <p>Codziennie od 9:00 do 22:00</p>
+      <section class="section">
+        <!-- RESERVATION -->
+        <div class="container reservation">
+          <h2 class="title title--big title--white large-gap">Rezerwacja online</h2>
+          <form name="signup" autocomplete="on" novalidate class="reservation__form">
+            <label for="name"></label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="imię"
+              class="reservation__input"
+            />
+            <label for="telephone"></label>
+            <input
+              type="tel"
+              name="phone"
+              id="telephone"
+              placeholder="telefon"
+              class="reservation__input"
+            />
+            <label for="message"></label>
+            <textarea
+              name="message"
+              id="message"
+              rows="4"
+              placeholder="wiadomość"
+              class="reservation__input"
+            ></textarea>
+            <div class="reservation__button">
+              <button type="submit" class="btn btn--reservation">Wyślij</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- CONTACT INFO -->
+        <div class="container contact">
+          <h3 class="title title--big title--white contact__title">Kontakt</h3>
+          <address class="contact__address-container">
+            <ul class="list-reset contact__list">
+              <li class="contact__address contact__space">ul. Prosta 20, Warszawa, 00-001</li>
+              <li class="contact__space">
+                <a href="tel:+48111111111" class="link-reset contact__address">+48 111 111 111</a>
+              </li>
+              <li class="contact__space">
+                <a href="mailto:barbershop@email.com" class="link-reset contact__address"
+                  >barbershop@email.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <p class="contact__info">Godziny otwarcia</p>
+          <p class="contact__address">Codziennie od 9:00 do 22:00</p>
+        </div>
       </section>
     </main>
-    <footer>
-      <p>Copyright 2023</p>
-      <ul>
-        <li><a href="#"></a>Instagram</li>
-        <li><a href="#"></a>Youtube</li>
-      </ul>
+    <footer class="section">
+      <div class="container footer">
+        <p class="footer__copyright">&#9400; Copyright 2023</p>
+        <ul class="list-reset footer__list">
+          <li><a href="#" class="social-links">Instagram</a></li>
+          <li><a href="#" class="social-links">Youtube</a></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>

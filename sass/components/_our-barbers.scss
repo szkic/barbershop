@@ -1,0 +1,49 @@
+.barbers {
+  background-color: $lightGray;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+  }
+
+  &__barber {
+    margin-bottom: 30px;
+  }
+
+  &__name {
+    font-size: 18px;
+    line-height: 1.38;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: $blackish;
+    margin-bottom: 8px;
+  }
+
+  &__job {
+    font-size: 14px;
+    line-height: 1.35;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: $orange;
+    margin-bottom: 30px;
+  }
+
+  &__social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &__social-icon {
+    padding: 12px;
+    background-color: $white;
+    border-radius: 50%;
+    display: block;
+    font-size: 0;
+  }
+
+  &__social-icon:hover {
+    fill: $orange;
+  }
+}

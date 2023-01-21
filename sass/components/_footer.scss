@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 29px;
+
+  &__copyright {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: $gray;
+  }
+
+  &__list {
+    display: flex;
+    gap: 40px;
+  }
+}

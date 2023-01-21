@@ -1,0 +1,79 @@
+.reservation {
+  background-color: $veryDark;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $grayOpacity;
+    margin-bottom: 44px;
+    padding: 8px 0;
+    outline: none;
+    resize: none;
+  }
+
+  &__input::placeholder {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+  }
+
+  &__input:hover {
+    cursor: pointer;
+    border-color: $white;
+    color: $white;
+  }
+
+  &__input:hover::placeholder {
+    color: $white;
+  }
+
+  &__button {
+    text-align: center;
+  }
+}
+
+.contact {
+  background-color: $veryDark;
+  background-image: url(/images/kontakt.png);
+
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    color: $gray;
+  }
+
+  &__space {
+    margin-bottom: 20px;
+  }
+
+  &__address-container {
+    margin-bottom: 44px;
+  }
+
+  &__address {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.66;
+    letter-spacing: 0.02em;
+    color: $gray;
+  }
+
+  &__info {
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $white;
+    margin-bottom: 20px;
+  }
+}
